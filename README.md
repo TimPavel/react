@@ -1,2 +1,2 @@
-# react
-for react lessons
+# React
+for React lessons
