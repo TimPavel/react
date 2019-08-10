@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+    class Human {
+
+        constructor(name, age, dateOfBirth) {
+            this.name = (typeof name == 'string' ? name : 'Ошибка при вводе');
+            this.age = (typeof age == 'number' ? age : 'Ошибка при вводе');
+            this.dateOfBirth = (typeof dateOfBirth == 'string' ? dateOfBirth : 'Ошибка при вводе');
+        }
+
+        displayInfo() {
+            return `${this.name} ${this.age} ${this.dateOfBirth}`;
+        }
+    }
+
+    class Employee extends Human {
+
+        constructor(name, age, dateOfBirth, salary, department) {
+            super(name, age, dateOfBirth);
+            this.salary = (typeof salary == 'number' ? salary : 'Ошибка при вводе');
+            this.department = (typeof department == 'string' ? department : 'Ошибка при вводе');
+        }
+
+        displayInfo() {
+            return [super.displayInfo(), this.salary, this.department].join(' ');
+        }
+    }
+
+    class Manager extends Employee {
+
+        constructor (name, age, dateOfBirth, salary, department) {
+            super(name, age, dateOfBirth, salary, department);
+            this.developers = [];
+        }
+
+
+        addDeveloper(developer) {
+            this.developers.push(developer);
+        }
+
+        removeDeveloper(developer) {
+            for (let i = 0; this.developers.length; i++) {
+                if (developer === this.developers[i]) {
+                    this.developers.splice(i, 1)
+                }
+            }
+        }
+    }
+
+    class Developer extends Employee {
+
+        constructor(name, age, dateOfBirth, salary, department) {
+            super(name, age, dateOfBirth, salary, department);
+            this.manager = '';
+        }
+
+        changeManager(manager) {
+            this.manager = manager;
+        }
+    }
+
+
+</script>
+
+</body>
+</html>
+
