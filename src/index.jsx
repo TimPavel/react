@@ -1,6 +1,18 @@
-import './style.scss';
+import React, { Component } from 'react'
+import ReactDom from 'react-dom'
 
-alert("Hello world!");
+class App extends Component {
+  render() {
+    return (<h1> Hello React! </h1>)
+  }
+}
+
+
+ReactDom.render(<App />, document.querySelector('#root'))
+
+
+
+
 
 
 

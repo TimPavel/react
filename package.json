@@ -1,5 +1,5 @@
 {
-  "name": "second_homework",
+  "name": "react_project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,21 +9,24 @@
     "react-dom": "^16.9.0"
   },
   "devDependencies": {
-    "babel-core": "^6.26.3",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
     "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
+    "css-loader": "^3.2.0",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.12.0",
     "rimraf": "^2.6.3",
     "sass-loader": "^7.2.0",
+    "style-loader": "^1.0.0",
     "webpack": "^4.39.1",
     "webpack-cli": "^3.3.6",
     "webpack-dev-server": "^3.8.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "rimraf ./dist && webpack-dev-server --mode development",
+    "dev": "rimraf ./dist && webpack --mode development",
     "build": "rimraf ./dist && webpack --mode production"
   },
   "keywords": [],
