@@ -14,11 +14,11 @@ export class Login extends Component {
   }
 
   handleClose() {
-    this.setState({isVisible: this.state = false})
+    this.setState({isVisible: false})
   };
 
   handleShow() {
-    this.setState({isVisible: this.state = true})
+    this.setState({isVisible: true})
   };
 
   render() {
