@@ -1,0 +1,13 @@
+.menu li {
+    display: inline;
+    margin-right: 5px;
+    padding: 3px;
+}
+
+.menu a {
+    color: rgba(255,255,255,.5);
+}
+
+.menu a:hover {
+    color: rgba(255,255,255,.75);
+}

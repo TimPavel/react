@@ -1,10 +1,7 @@
 import React, { Component } from 'react'
 import ReactDom from 'react-dom'
-import { Menu } from './components/menu'
-import { Login } from './components/login'
 
-import { Content } from './components/content'
-import { Container } from "react-bootstrap";
+import { Header } from "./components/header";
 
 const items = [
   {href: '/', title: 'Home'},
@@ -15,12 +12,10 @@ const items = [
 class App extends Component {
   render() {
     return (
-      <div className={Container}>
-        <Menu items_prop = {items} title = { 'Main Menu' }> </Menu>
+      <div>
+        <Header />
 
-        <Login />
 
-        <Content > </Content>
       </div>
     )
   }

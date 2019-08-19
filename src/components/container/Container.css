@@ -1,0 +1,13 @@
+.container{
+    margin: 0 auto;
+}
+
+.container a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
