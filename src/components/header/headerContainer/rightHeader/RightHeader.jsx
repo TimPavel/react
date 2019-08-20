@@ -1,6 +1,6 @@
 import React, {Component, Fragment} from 'react'
 import './rightHeader.css'
-import {Menu} from "../menu";
+import {Menu} from "./menu";
 
 const items = [
   {href: '/', title: 'Home'},

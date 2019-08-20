@@ -1,10 +1,9 @@
 import React, {Component, Fragment} from 'react'
-import './Container.css'
-import {LeftHeader} from "../leftHeader";
-import {RightHeader} from "../rightHeader";
+import './HeaderContainer.css'
+import {LeftHeader} from "./leftHeader";
+import {RightHeader} from "./rightHeader";
 
-
-export class Container extends Component {
+export class HeaderContainer extends Component {
 
   render() {
     return (

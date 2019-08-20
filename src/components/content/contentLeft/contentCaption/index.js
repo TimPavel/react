@@ -1,0 +1,1 @@
+export { ContentCaption } from './ContentCaption';

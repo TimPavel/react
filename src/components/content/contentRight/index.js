@@ -1,0 +1,2 @@
+export { ContentRight } from './ContentRight';
+

@@ -1,6 +1,6 @@
 import React, {Component, Fragment} from 'react'
 import './Header.css'
-import {Container} from "../container";
+import {HeaderContainer} from "./headerContainer";
 
 
 export class Header extends Component {
@@ -9,7 +9,10 @@ export class Header extends Component {
     return (
       <Fragment>
         <div className="header">
-          <Container/>
+
+          <HeaderContainer/>
+
+
         </div>
 
       </Fragment>
