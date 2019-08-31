@@ -7,8 +7,8 @@ export class LeftHeader extends Component {
 
     return (
       <Fragment>
-       <div>
-         <a href="/">Start Bootstrap</a>
+       <div className="headerTitle">
+         <a href="/">Start&nbsp;Bootstrap</a>
        </div>
       </Fragment>
     )

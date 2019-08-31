@@ -10,7 +10,7 @@ export class ContentCaption extends Component {
       <Fragment>
 
 
-          <h1>Page Heading
+          <h1 className="captionContent">Page Heading&nbsp;
             <small>Secondary Text</small>
           </h1>
 

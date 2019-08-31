@@ -7,9 +7,9 @@ export class Menu extends Component {
   render() {
     const {items_prop, title} = this.props;
     return (
-      <div>
+      <div className="menuWrap">
         <ul className = 'menu'>
-          {items_prop.map(el => <li><a href={ el.href }>{ el.title }</a></li>)}
+          {items_prop.map(el => <li key={ el.title } ><a href={ el.href } >{ el.title }</a></li>)}
         </ul>
       </div>
     )

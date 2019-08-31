@@ -1,0 +1,2 @@
+export { SideWidgetBlock } from './SideWidgetBlock';
+

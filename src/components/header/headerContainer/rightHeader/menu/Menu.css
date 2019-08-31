@@ -1,7 +1,15 @@
+.menuWrap {
+    display: flex;
+}
+
+.menu {
+    margin-bottom: 0;
+}
+
 .menu li {
-    display: inline;
+    display: inline-block;
     margin-right: 5px;
-    padding: 3px;
+    padding-left: 10px;
 }
 
 .menu a {
@@ -11,3 +19,4 @@
 .menu a:hover {
     color: rgba(255,255,255,.75);
 }
+

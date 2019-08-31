@@ -6,7 +6,7 @@ const items = [
   {href: '/', title: 'Home'},
   {href: '/about', title: 'About'},
   {href: '/service', title: 'Services'},
-  {href: '/contacts', title: 'Contacts'}
+  {href: '/contacts', title: 'Contact'}
 ]
 
 export class RightHeader extends Component {
@@ -14,7 +14,7 @@ export class RightHeader extends Component {
 
     return (
       <Fragment>
-        <Menu items_prop = {items} title = { 'Main Menu' }> </Menu>
+        <Menu items_prop = {items} title = { 'Main Menu' } > </Menu>
       </Fragment>
     )
   }

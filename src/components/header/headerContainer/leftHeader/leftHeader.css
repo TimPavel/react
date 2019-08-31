@@ -1,0 +1,12 @@
+.headerTitle {
+    position: relative;
+}
+
+.headerTitle a {
+     font-size: 1.25rem;
+     color: #fff;
+     text-decoration: none;
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+ }

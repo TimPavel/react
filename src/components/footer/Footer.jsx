@@ -1,4 +1,4 @@
-import React, {Component, Fragment} from 'react'
+import React, {Component} from 'react'
 import './Footer.css'
 
 
@@ -6,9 +6,11 @@ export class Footer extends Component {
   render() {
 
     return (
-      <Fragment>
-        Hi
-      </Fragment>
+      <footer className="py-5 bg-dark">
+        <div className="container">
+          <p className="m-0 text-center text-white">Copyright © Your Website 2019</p>
+        </div>
+      </footer>
     )
   }
 }

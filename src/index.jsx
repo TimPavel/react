@@ -3,6 +3,7 @@ import ReactDom from 'react-dom'
 
 import { Header } from "./components/header";
 import {Content} from "./components/content";
+import {Footer} from "./components/footer";
 
 const items = [
   {href: '/', title: 'Home'},
@@ -16,7 +17,7 @@ class App extends Component {
       <div>
         <Header />
         <Content/>
-
+        <Footer/>
       </div>
     )
   }

@@ -8,7 +8,7 @@ export class HeaderContainer extends Component {
   render() {
     return (
       <Fragment>
-        <div className="container flex">
+        <div className="container flex headerContent">
           <LeftHeader/>
           <RightHeader/>
         </div>

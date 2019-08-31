@@ -1,7 +1,5 @@
 import React, {Component, Fragment} from 'react'
 import './Post.css'
-import {PostFooter} from "./postFooter";
-
 
 
 export class Post extends Component {
@@ -10,17 +8,21 @@ export class Post extends Component {
     return (
       <Fragment>
 
-        <div className="card" >
-          <img src="../../../" className="card-img-top" alt="..."></img>
+        <div className="card mb-4">
+          <img src="/src/assets/750x300.png" className="card-img-top" alt="..."/>
           <div className="card-body">
-            <h5 className="card-title">Post title</h5>
+            <h2 className="card-title">Post Title</h2>
             <p className="card-text">Some quick example text to build on the card title and make up the bulk of the
               card's content.</p>
             <a href="#" className="btn btn-primary">Read More -></a>
           </div>
-        </div>
 
-        <PostFooter/>
+
+          <div className="postFooter text-muted">
+            Posted on January 1, 2017 by&nbsp;
+            <a href="#">Start Bootstrap</a>
+          </div>
+        </div>
       </Fragment>
     )
   }
